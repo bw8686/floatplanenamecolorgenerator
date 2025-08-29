@@ -1,0 +1,114 @@
+:root {
+    --bg-color: #1a1a1a;
+    --text-color: #f0f0f0;
+    --input-bg: #2d2d2d;
+    --input-border: #444;
+    --card-bg: #2d2d2d;
+    --error-color: #ff6b6b;
+    
+    /* Color palette */
+    --color-1: #333333;
+    --color-2: #006699;
+    --color-3: #CC6600;
+    --color-4: #990099;
+    --color-5: #009933;
+    --color-6: #FF6600;
+    --color-7: #006666;
+    --color-8: #993333;
+    --color-9: #663399;
+    --color-10: #0099CC;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1 {
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.input-container {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+input[type="text"] {
+    padding: 12px 15px;
+    width: 300px;
+    max-width: 100%;
+    font-size: 16px;
+    border: 2px solid var(--input-border);
+    border-radius: 6px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: var(--color-1);
+    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+.color-display {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.color-box {
+    padding: 15px;
+    border-radius: 6px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.color-box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.color-info {
+    background: var(--card-bg);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.color-info h3 {
+    margin-top: 0;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--input-border);
+    padding-bottom: 10px;
+}
+
+.color-info p {
+    margin: 10px 0;
+    color: #ccc;
+}
+
+.error-message {
+    color: var(--error-color);
+    margin-top: 5px;
+    font-size: 0.9em;
+    display: none;
+}
+
+.char-count {
+    font-size: 0.8em;
+    color: #888;
+    text-align: center;
+    margin-top: 5px;
+}

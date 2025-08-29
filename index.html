@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floatplane Username Color Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Floatplane Username Color Generator</h1>
+    
+    <div class="input-container">
+        <input type="text" id="usernameInput" 
+               placeholder="Enter a username (a-z, A-Z, 0-9, -_)" 
+               maxlength="20" 
+               autofocus
+               pattern="^[a-zA-Z0-9\-_]+$"
+               title="Only alphanumeric characters, dashes, and underscores are allowed">
+        <div id="charCount" class="char-count">0/20</div>
+        <div id="errorMessage" class="error-message"></div>
+    </div>
+
+    <div id="result" class="color-display">
+        <!-- Results will be inserted here by JavaScript -->
+    </div>
+
+    <div class="color-info">
+        <h3>How it works:</h3>
+        <p>Enter a username to see all possible color variations based on different capitalizations. The color is determined by hashing the username and mapping it to one of 10 predefined colors.</p>
+        <p>This is useful for finding the color you want for your username on the floatplane live chat.</p>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
