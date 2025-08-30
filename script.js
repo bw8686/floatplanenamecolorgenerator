@@ -10,16 +10,16 @@ function fastHashStringToInt(str) {
 
 const NAME_COLOR_COUNT = 10;
 const COLORS = [
-    '#333333', // 1
+    '#aaaaaa', // 11
     '#006699', // 2
-    '#CC6600', // 3
-    '#990099', // 4
+    '#cc6600', // 3
+    '#d400d4', // 4
     '#009933', // 5
-    '#FF6600', // 6
+    '#ff6600', // 6
     '#006666', // 7
-    '#993333', // 8
-    '#663399', // 9
-    '#0099CC'  // 10
+    '#b63d3d', // 8
+    '#9763cb', // 9
+    '#0099cc', // 10
 ];
 
 function getUsernameColorIndex(username) {
