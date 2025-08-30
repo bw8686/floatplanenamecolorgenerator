@@ -10,7 +10,7 @@ function fastHashStringToInt(str) {
 
 const NAME_COLOR_COUNT = 10;
 const COLORS = [
-    '#aaaaaa', // 11
+    '#aaaaaa', // 1
     '#006699', // 2
     '#cc6600', // 3
     '#d400d4', // 4
